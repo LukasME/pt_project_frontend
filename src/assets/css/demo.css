@@ -39,7 +39,7 @@
 
 .typography-line .note {
     bottom: 10px;
-    color: #c0c1c2;
+    color: #ffffff;
     display: block;
     font-weight: 400;
     font-size: 13px;
@@ -97,13 +97,13 @@
     /*     position: relative; */
 }
 
-.navigation-example {
+/*.navigation-example {
     background-image: url('../img/ilya-yakover.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
-}
+}*/
 
 #notifications {
     background-color: #FFFFFF;
@@ -1063,7 +1063,7 @@ pre.prettyprint {
 }
 
 .navbar-header {
-    min-width: 135px;
+    min-width: 100px;
 }
 
 #demo-navbar {

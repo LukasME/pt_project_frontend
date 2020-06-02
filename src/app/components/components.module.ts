@@ -6,10 +6,9 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
 
-import { MainmenuComponent } from './mainmenu/mainmenu.component';
-import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
+import { MenuItemComponent } from './expedition-menu-item/expedition-menu-item.component';
 import { ComponentsComponent } from './components.component';
-import { NavigationComponent } from './navigation/navigation.component';
+
 
 @NgModule({
     imports: [
@@ -21,10 +20,8 @@ import { NavigationComponent } from './navigation/navigation.component';
         JwBootstrapSwitchNg2Module
     ],
     declarations: [
-        MainmenuComponent,
+        MenuItemComponent,
         ComponentsComponent,
-        NavigationComponent,
-        NucleoiconsComponent,
 
     ],
 })
