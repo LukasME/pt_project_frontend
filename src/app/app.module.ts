@@ -10,7 +10,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ComponentsModule } from './components/components.module';
 
-
+import { ExpeditionMenuItemComponent } from './components/expedition-menu-item/expedition-menu-item.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
