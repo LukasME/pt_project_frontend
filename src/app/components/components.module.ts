@@ -6,8 +6,10 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
 
-import { MenuItemComponent } from './expedition-menu-item/expedition-menu-item.component';
 import { ComponentsComponent } from './components.component';
+import { ExpeditionMenuItemComponent } from './expedition-menu-item/expedition-menu-item.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ExpeditionPresentationComponent } from './expedition-presentation/expedition-presentation.component';
 
 
 @NgModule({
@@ -17,12 +19,13 @@ import { ComponentsComponent } from './components.component';
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
+        NoopAnimationsModule
     ],
     declarations: [
-        MenuItemComponent,
         ComponentsComponent,
-
+        ExpeditionMenuItemComponent,
+        ExpeditionPresentationComponent
     ],
 })
 export class ComponentsModule { }
