@@ -8,25 +8,42 @@ import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { ComponentsModule } from './components/components.module';
 
 import { ExpeditionMenuItemComponent } from './components/expedition-menu-item/expedition-menu-item.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ExpeditionPresentationComponent } from './components/expedition-presentation/expedition-presentation.component';
+import { HomeComponent } from './pages/home/home.component';
+
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
+// Copied from the Paper-Kit 2 template
+import { CommonModule } from '@angular/common';
+import { NouisliderModule } from 'ng2-nouislider';
+import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
+import { BlogComponent } from './pages/blog/blog.component';
+import { AboutComponent } from './pages/about/about.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ExpeditionMenuItemComponent,
+    ExpeditionPresentationComponent,
+    BlogComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
     RouterModule,
-    ComponentsModule,
     AppRoutingModule,
+    CommonModule,
+    NouisliderModule,
+    JwBootstrapSwitchNg2Module,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
