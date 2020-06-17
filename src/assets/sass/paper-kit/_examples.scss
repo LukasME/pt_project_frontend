@@ -182,22 +182,24 @@
 
 .presentation-title{
     font-size: 8em;
+    position: relative;
     font-weight: 700;
     margin: 0;
-    color: #FFFFFF;
-    // background: #fbf8ec;
-    background: -moz-linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
-    background: -webkit-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: -ms-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: -o-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
+    color: rgb(255, 255, 255);
+    background: #f5c60a;
+    background: -moz-linear-gradient(to bottom, #f5c60a 35%, #4e6773 100%);
+    background: -webkit-linear-gradient(to bottom, #f5c60a 35%,#4e6773 100%);
+    background: -ms-linear-gradient(to bottom, #f5c60a 35%,#4e6773 100%);
+    background: -o-linear-gradient(to bottom, #f5c60a 35%,#4e6773 100%);
+    background: linear-gradient(to bottom, #f5c60a 35%,#4e6773 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .presentation-subtitle{
     font-size: 1.7em;
-    color: #FFFFFF;
+    font-weight: 500;
+    color: rgb(161, 243, 10);
 }
 
 .category-absolute{

@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ExpeditionMenuItemComponent } from './components/expedition-menu-item/expedition-menu-item.component';
 import { ExpeditionPresentationComponent } from './components/expedition-presentation/expedition-presentation.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SVK1Component } from './components/Slovensko1/svk1.component';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -23,6 +24,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { AboutComponent } from './pages/about/about.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,7 @@ import { AboutComponent } from './pages/about/about.component';
     FooterComponent,
     HomeComponent,
     ExpeditionMenuItemComponent,
+    SVK1Component,
     ExpeditionPresentationComponent,
     BlogComponent,
     AboutComponent

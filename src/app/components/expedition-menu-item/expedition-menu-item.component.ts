@@ -12,9 +12,9 @@ export class ExpeditionMenuItemComponent implements OnInit {
   // Mock for expeditions
   public expedition: Expedition = {
     id: 0,
-    title: 'IT-FR-ES Trip',
-    description: 'Toto je popis nášej cesty po západnej Európe v roku 2018',
-    states: ['Taliansko', 'Francúzsko', 'Španielsko'],
+    title: 'Partia ľudí',
+    description: 'cestovanie nas baví',
+    states: ['.'],
     dateFrom: new Date(),
     dateTo: new Date(),
     photoUrls: [''],
