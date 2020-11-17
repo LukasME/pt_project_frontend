@@ -1,0 +1,8 @@
+<div>
+    <h1>{{expedition.title}}</h1>
+    <p>{{expedition.description}}</p>
+    <!--{{expedition.dateFrom}} - {{expedition.dateTo}}</div>-->
+    <ul>
+        <li *ngFor="let state of expedition.states">{{state}}</li>
+    </ul>
+</div>
