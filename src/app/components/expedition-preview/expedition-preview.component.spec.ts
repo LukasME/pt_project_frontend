@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NORComponent } from './nor.component';
+import { ExpeditionPreviewComponent } from './expedition-preview.component';
 
-describe('NORComponent', () => {
-  let component: NORComponent;
-  let fixture: ComponentFixture<NORComponent>;
+describe('ExpeditionPreviewComponent', () => {
+  let component: ExpeditionPreviewComponent;
+  let fixture: ComponentFixture<ExpeditionPreviewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NORComponent ]
+      declarations: [ ExpeditionPreviewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NORComponent);
+    fixture = TestBed.createComponent(ExpeditionPreviewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

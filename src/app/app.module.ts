@@ -9,15 +9,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
-import { ExpeditionMenuItemComponent } from './components/expedition-menu-item/expedition-menu-item.component';
+import { ExpeditionPreviewComponent } from './components/expedition-preview/expedition-preview.component';
 import { HomeComponent } from './pages/home/home.component';
-import { SVK1Component } from './components/Slovensko1/svk1.component';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatCardModule } from "@angular/material/card";
-import { MatToolbarModule } from "@angular/material/toolbar";
-import { MatButtonModule } from "@angular/material/button";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 // Copied from the Paper-Kit 2 template
@@ -26,11 +26,9 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { BlogComponent } from './pages/blog/blog.component';
 import { AboutComponent } from './pages/about/about.component';
-import { BAL1Component } from './components/balkan1/bal1.component';
-import { NORComponent } from './components/norsko/nor.component';
-import { ITFRSComponent } from './components/itfrs/itfrs.component';
-import { IRLComponent } from './components/irsko/irl.component';
-import { SVK2Component } from './components/slovensko2/svk2.component';
+import { SafeHtmlPipe } from './shared/pipes/safe-html.pipe';
+import { ExpeditionComponent } from './pages/expedition/expedition.component';
+import { HtmlContentComponent } from './components/html-content/html-content.component';
 
 
 
@@ -40,18 +38,15 @@ import { SVK2Component } from './components/slovensko2/svk2.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ExpeditionMenuItemComponent,
-    SVK1Component,
-    BAL1Component,
-    NORComponent,
-    ITFRSComponent,
-    IRLComponent,
-    SVK2Component,
+    ExpeditionPreviewComponent,
     BlogComponent,
     AboutComponent,
-    
+    SafeHtmlPipe,
+    ExpeditionComponent,
+    HtmlContentComponent
   ],
   imports: [
+    MDBBootstrapModule.forRoot(),
     BrowserModule,
     NgbModule,
     FormsModule,
@@ -64,9 +59,7 @@ import { SVK2Component } from './components/slovensko2/svk2.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatToolbarModule,
-    MatButtonModule,
-    
-    
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

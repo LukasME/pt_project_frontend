@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ITFRSComponent } from './itfrs.component';
+import { HtmlContentComponent } from './html-content.component';
 
-describe('ITFRSComponent', () => {
-  let component: ITFRSComponent;
-  let fixture: ComponentFixture<ITFRSComponent>;
+describe('HtmlContentComponent', () => {
+  let component: HtmlContentComponent;
+  let fixture: ComponentFixture<HtmlContentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ITFRSComponent ]
+      declarations: [ HtmlContentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ITFRSComponent);
+    fixture = TestBed.createComponent(HtmlContentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
