@@ -1,17 +1,26 @@
-<div class="page-header page-header-small">
-    <div class="page-header rellax-header"  data-rellax-speed="-8"  style="background-image: url('assets/img/Bckexp.jpg')">
-        <div class="container top">
-                <div class="col-sm-12">
-                <h1 class="top black-bg">14 Krajín</h1>
-                <br>
-                <h2 class="black-bg">Viac ako 24 tisíc km po Európe</h2>
-                <div class="bottom text-center">
-                    <h4>Established 2015</h4> 
+<section id="video-presentation">
+    <video class="video-frame" muted autoplay loop playsinline id="intro_video">
+        <source src="assets/video/intro__trim.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay">
+        <div class="container">
+            <div class="bottom">
+                <div class="banner-text">
+                    <h1 class="black-bg">14 Krajín</h1>
+                    <br>
+                    <h2 class="black-bg">Viac ako 24 tisíc km po Európe</h2>
                 </div>
+                <h4>Established 2015</h4> 
             </div>
-        </div> 
-    </div>
-</div>
+        </div>
+    </div> 
+    <!--scroll-button></scroll-button-->
+</section>
+
+<section id="introduction">
+    <h2>Kto sme?</h2>
+
+</section>
 
 <app-expedition-preview *ngFor="let expedition of expeditions;" [expedition]="expedition"></app-expedition-preview>
 

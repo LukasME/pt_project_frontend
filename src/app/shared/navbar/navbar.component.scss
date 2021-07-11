@@ -1,0 +1,95 @@
+nav.app-navigation {
+    position: fixed;
+    width: 100%;
+    min-height: 60px;
+    top: 0;
+    z-index: 100;
+    transition: all .3s ease;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+    
+
+    .nav-shadow {
+        background-color: var(--navigation-color);
+
+        #navbar-logo {
+            a {
+                color: var(--text-color);
+            }
+        }
+    
+        #navbar-menu {
+            a {
+                color: var(--text-color);
+            }
+    
+            .navbar-nav {
+                display: flex;
+                flex-direction: row;
+    
+                .nav-item a {
+                    padding: 5px 10px;
+                }
+    
+                .nav-item:hover a {
+    
+                }
+    
+                .nav-item:active a {
+    
+                }
+            }
+        }
+    
+        .navbar-inner {
+            position: relative;
+            display: flex;
+            width: 100%;
+            min-height: 60px;
+            top: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }
+    
+}
+
+nav.app-navigation.hide {
+    top: -61px;
+}
+
+nav.app-navigation::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: calc(-210%);
+    height: 300%;
+    width: 100%;
+    background: radial-gradient(rgba(75, 0, 130, 1), rgba(75, 0, 130, 0));
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
+// Color theme
+nav.app-navigation.color-theme {
+    .nav-shadow {
+        background-color: var(--base-color);
+
+        #navbar-logo {
+            a {
+                color: var(--base-text-color);
+            }
+        }
+
+        #navbar-menu {
+            a {
+                color: var(--base-text-color);
+            }
+        }
+    }
+}

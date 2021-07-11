@@ -1,0 +1,61 @@
+:root {
+    --base-color: rgb(75, 0, 130);
+    --base-text-color: rgb(255, 255, 255);
+    --navigation-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.black-bg {
+    background-color: #000000;
+}
+
+.image-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*.parallax {
+    background-attachment: fixed;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}*/
+
+.parallax {
+    perspective: 1px;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2); // scale = 1 + (translateZ * -1) / perspective
+}

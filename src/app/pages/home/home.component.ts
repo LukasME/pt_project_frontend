@@ -3,17 +3,15 @@ import { Content } from '../../shared/models/content.model';
 import { DOCUMENT } from '@angular/common';
 import { Expedition } from '../../shared/models/expedition.model';
 
-
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
-  public content: Content[] = []
-  windowScrolled: boolean;
+  public content: Content[] = [];
+  private windowScrolled: boolean;
 
   public expeditions: Expedition[] = [
     {
@@ -278,7 +276,7 @@ export class HomeComponent implements OnInit {
           </div>
       </div>`,
     }
-  ]
+  ];
 
   constructor(
     @Inject(DOCUMENT) private document: Document

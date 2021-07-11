@@ -1,0 +1,88 @@
+
+.black-bg {
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 46px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.5;
+    padding: 0 0px 0 0px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 32px;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding: 0 0px 0 0px;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.scroll-to-top {
+    position: fixed;
+    z-index: 1;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+#video-presentation {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    @supports (-webkit-appearance:none) {
+        .os-android & {
+            min-height: calc(100vh - 60px);
+        }
+    }
+
+    .video-frame {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        object-fit: cover;
+        @supports (-webkit-appearance:none) {
+            .os-android & {
+                min-height: calc(100vh - 60px);
+            }
+        }
+    }
+    
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* background-color: rgba(255,255,255,0.2); */
+
+        .container {
+            height: 100%;
+
+            .banner-text {
+                margin-bottom: 10vh;
+            }
+
+            .bottom {
+                color: white;
+                position: absolute;
+                bottom: 10vh;
+            }
+        } 
+    }
+}
+

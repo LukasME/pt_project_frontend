@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Expedition } from '../../shared/models/expedition.model';
+import { BackendInterfaceService } from '../../services/backend-interface.service';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-expedition',
@@ -7,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpeditionComponent implements OnInit {
 
-  constructor() { }
+  expedition: Expedition;
+  loading = false;
+
+  constructor(
+    private backendInterface: BackendInterfaceService,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.getExpedition();
+  }
+
+  getExpedition(): void {
+    this.loading = true;
+    const expeditionIdentifier = this.route.snapshot.paramMap.get('identifier');
+    this.backendInterface.getExpeditionBySlug(expeditionIdentifier).subscribe( data => {
+      this.loading = false;
+      this.expedition = data;
+    });
   }
 
 }
